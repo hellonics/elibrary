@@ -19,7 +19,12 @@ Route::get('/', function () {
 });
 
 
-Route::get('/', function () {
+Route::get('/user', function () {
+   return view('welcome');
+});
+
+
+Route::get('/buku', function () {
     return view('buku');
 });
 
