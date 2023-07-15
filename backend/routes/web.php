@@ -18,8 +18,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('/dashboard', function () {
     return view('welcome');
 });
 
 Route::get('/dashboard', [DashboardController::class, 'index']);
+
+Route::get('/login', function () {
+    return view('welcome');
+});
+
