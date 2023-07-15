@@ -19,6 +19,11 @@ Route::get('/', function () {
 });
 
 
+Route::get('/', function () {
+    return view('buku');
+});
+
+
 Route::get('/dashboard', function () {
     return view('welcome');
 });
@@ -28,4 +33,5 @@ Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/login', function () {
     return view('welcome');
 });
+
 
