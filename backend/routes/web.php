@@ -39,4 +39,9 @@ Route::get('/login', function () {
     return view('welcome');
 });
 
+Route::get('/tambahbuku', function () {
+    return view('welcome');
+});
+
+
 
