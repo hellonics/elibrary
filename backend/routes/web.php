@@ -43,5 +43,8 @@ Route::get('/tambahbuku', function () {
     return view('welcome');
 });
 
+Route::get('/daftarbuku', function () {
+    return view('welcome');
+});
 
 
