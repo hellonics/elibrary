@@ -15,12 +15,12 @@ use App\Htpp\Controllers\DashboardController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home.index');
 });
 
 
 Route::get('/user', function () {
-   return view('welcome');
+    return view('welcome');
 });
 
 
@@ -54,5 +54,3 @@ Route::get('/user', function () {
 Route::get('/loginuser', function () {
     return view('welcome');
 });
-
-
