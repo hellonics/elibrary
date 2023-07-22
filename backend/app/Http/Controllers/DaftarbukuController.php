@@ -12,6 +12,7 @@ class DaftarbukuController extends Controller
      */
     public function index()
     {
+
         $daftarbuku = all::daftarbuku();
         return view('daftarbuku');
     }
@@ -45,7 +46,9 @@ class DaftarbukuController extends Controller
      */
     public function edit(Daftarbuku $daftarbuku)
     {
+
         return view('daftarbuku.edit');
+
     }
 
     /**
