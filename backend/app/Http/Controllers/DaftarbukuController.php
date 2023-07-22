@@ -12,7 +12,7 @@ class DaftarbukuController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**
@@ -20,7 +20,7 @@ class DaftarbukuController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -44,7 +44,8 @@ class DaftarbukuController extends Controller
      */
     public function edit(Daftarbuku $daftarbuku)
     {
-        //
+        
+        
     }
 
     /**
