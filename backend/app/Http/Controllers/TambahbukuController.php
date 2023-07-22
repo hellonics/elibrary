@@ -12,7 +12,9 @@ class TambahbukuController extends Controller
      */
     public function index()
     {
-        
+        $tambahbuku = all::tambahbuku();
+        return view('tambahbuku');
+
     }
 
     /**
@@ -20,7 +22,7 @@ class TambahbukuController extends Controller
      */
     public function create()
     {
-        
+        return view('tambahbuku.create');
     }
 
     /**
@@ -44,6 +46,7 @@ class TambahbukuController extends Controller
      */
     public function edit(Tambahbuku $tambahbuku)
     {
+        return view('tambahbuku.edit');
         
     }
 
