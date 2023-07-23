@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Buku;
 use App\Models\Daftarbuku;
 use Illuminate\Http\Request;
 
@@ -13,8 +14,8 @@ class DaftarbukuController extends Controller
     public function index()
     {
 
-        $daftarbuku = all::daftarbuku();
-        return view('daftarbuku');
+        $daftarbuku = Buku::all();
+        return view('buku.index', compact('daftarbuku'));
     }
 
     /**
@@ -48,7 +49,6 @@ class DaftarbukuController extends Controller
     {
 
         return view('daftarbuku.edit');
-
     }
 
     /**

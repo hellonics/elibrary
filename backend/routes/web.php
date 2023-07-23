@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Htpp\Controllers\DashboardController;
+use App\Http\Controllers\DaftarbukuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,9 +44,7 @@ Route::get('/tambahbuku', function () {
     return view('welcome');
 });
 
-Route::get('/daftarbuku', function () {
-    return view('welcome');
-});
+Route::get('/daftarbuku', [DaftarbukuController::class, 'index']);
 
 Route::get('/user', function () {
     return view('welcome');
