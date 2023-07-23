@@ -31,7 +31,13 @@ class DaftarbukuController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $buku = new Buku();
+        $buku->judul = $request->judul;
+        $buku->penulis = $request->penulis;
+        $buku->kategori = $request->kategori;
+        $buku->save();
+
+        return redirect('/buku');
     }
 
     /**
