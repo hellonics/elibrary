@@ -35,14 +35,17 @@
                                 </thead>
                                 <tbody>
 
-                                    <tr>
-                                        <th></th>
-                                        <td></td>
-                                        <td></td>
-                                        <td>
-                                        </td>
-                                    </tr>
-
+                                    @foreach ($bukus as $buku)
+                                        <tr>
+                                            <th scope="row">{{ $loop->iteration }}</th>
+                                            <td>{{ $buku->judul }}</td>
+                                            <td>{{ $buku->penulis }}</td>
+                                            <td>{{ $buku->kategori }}</td>
+                                            <td>
+                                                <a href="/buku/edit/{{ $buku->id }}" class="btn btn-info rounded-pill">edit</a>
+                                            </td>
+                                        </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                             <!-- End Table with hoverable rows -->
