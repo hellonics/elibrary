@@ -6,7 +6,7 @@ use App\Models\Buku;
 use App\Models\Daftarbuku;
 use Illuminate\Http\Request;
 
-class DaftarbukuController extends Controller
+class BukuController extends Controller
 {
     /**
      * Display a listing of the resource.

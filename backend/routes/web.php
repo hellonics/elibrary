@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Htpp\Controllers\DashboardController;
-use App\Http\Controllers\DaftarbukuController;
+use App\Http\Controllers\BukuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,11 +40,9 @@ Route::get('/login', function () {
     return view('welcome');
 });
 
-Route::get('/tambahbuku', function () {
-    return view('welcome');
-});
+Route::get('/buku/tambah', [BukuController::class, 'create']);
 
-Route::get('/daftarbuku', [DaftarbukuController::class, 'index']);
+Route::get('/daftarbuku', [BukuController::class, 'index']);
 
 Route::get('/user', function () {
     return view('welcome');
