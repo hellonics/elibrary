@@ -14,8 +14,8 @@ class BukuController extends Controller
     public function index()
     {
 
-        $daftarbuku = Buku::all();
-        return view('buku.index', compact('daftarbuku'));
+        $bukus = Buku::all();
+        return view('buku.index', compact('bukus'));
     }
 
     /**

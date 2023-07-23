@@ -25,9 +25,6 @@ Route::get('/user', function () {
 });
 
 
-Route::get('/buku', function () {
-    return view('buku');
-});
 
 
 Route::get('/dashboard', function () {
@@ -41,8 +38,9 @@ Route::get('/login', function () {
 });
 
 Route::get('/buku/tambah', [BukuController::class, 'create']);
+Route::post('/buku/store', [BukuController::class, 'store']);
 
-Route::get('/daftarbuku', [BukuController::class, 'index']);
+Route::get('/buku', [BukuController::class, 'index']);
 
 // edit
 Route::get('/buku/edit', [BukuController::class, 'edit']);
