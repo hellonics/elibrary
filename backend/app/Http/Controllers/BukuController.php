@@ -43,7 +43,7 @@ class BukuController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Daftarbuku $daftarbuku)
+    public function show(Buku $buku)
     {
         //
     }
@@ -51,24 +51,29 @@ class BukuController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Daftarbuku $daftarbuku)
+    public function edit(Buku $buku)
     {
 
-        return view('daftarbuku.edit');
+        return view('buku.edit', compact('buku'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Daftarbuku $daftarbuku)
+    public function update(Request $request, Buku $buku)
     {
-        //
+        $buku->Nama=$request->Nama;
+        $buku->Penulis=$request->Penulis;
+        $buku->Kategori=$request->Kategori;
+        $buku->save();
+
+        return view('/buku');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Daftarbuku $daftarbuku)
+    public function destroy(Buku $buku)
     {
         //
     }

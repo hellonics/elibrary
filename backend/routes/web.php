@@ -44,6 +44,9 @@ Route::get('/buku/tambah', [BukuController::class, 'create']);
 
 Route::get('/daftarbuku', [BukuController::class, 'index']);
 
+// edit
+Route::get('/buku/edit', [BukuController::class, 'edit']);
+
 Route::get('/user', function () {
     return view('welcome');
 });
