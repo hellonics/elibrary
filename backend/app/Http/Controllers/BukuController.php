@@ -62,7 +62,12 @@ class BukuController extends Controller
      */
     public function update(Request $request, Daftarbuku $daftarbuku)
     {
-        //
+        $buku->judul = $request->judul;
+        $buku->penulis = $request->penulis;
+        $buku->kategori = $request->penulis;
+        $buku->save();
+
+        return redirect('/buku');
     }
 
     /**
