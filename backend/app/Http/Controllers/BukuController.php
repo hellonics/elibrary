@@ -23,7 +23,7 @@ class DaftarbukuController extends Controller
      */
     public function create()
     {
-        return view('daftarbuku.create');
+        return view('buku.create');
     }
 
     /**
